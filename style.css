@@ -22,6 +22,52 @@ CSS STRUCTURE:
 2. GENERAL TYPOGRAPHY
 
 --------------------------------------------------------------*/
+.integrantes-container {
+  display: flex;
+  justify-content: center; /* Centra los elementos horizontalmente */
+  align-items: center;    /* Centra los elementos verticalmente */
+  flex-wrap: wrap;        /* Permite que los elementos se ajusten en varias filas si es necesario */
+  gap: 20px;              /* Espaciado entre los elementos */
+  padding: 20px;          /* Espaciado interno del contenedor */
+  background-color: #f9f9f9; /* Fondo del contenedor */
+}
+
+.integrante {
+  text-align: center; /* Centra el contenido de cada integrante */
+  width: 200px;       /* Ancho fijo para cada tarjeta */
+  padding: 15px;
+  border: 1px solid #ddd; /* Borde ligero */
+  border-radius: 10px;    /* Bordes redondeados */
+  background-color: #fff; /* Fondo blanco */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+}
+
+.integrante img {
+  width: 100%;        /* La imagen ocupa el ancho completo del contenedor */
+  height: auto;       /* Mantiene la proporción de la imagen */
+  border-radius: 50%; /* Convierte la imagen en un círculo */
+  margin-bottom: 10px;
+}
+
+.integrante h3 a {
+  text-decoration: none; /* Quita el subrayado de los enlaces */
+  color: #333;           /* Color del texto */
+  font-weight: bold;
+}
+
+.integrante p {
+  font-size: 14px;   /* Tamaño del texto */
+  color: #666;       /* Color del texto */
+}
+
+.integrante .correo a {
+  color: #007bff;    /* Color del enlace */
+  text-decoration: none;
+}
+
+.integrante .correo a:hover {
+  text-decoration: underline; /* Subraya el enlace al pasar el mouse */
+}
 body {
   --heading-font: "Mirza", Georgia, serif;
   --heading-font-weight: 400;
