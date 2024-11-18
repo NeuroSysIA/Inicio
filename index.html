@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>NeuroSys IA</title>
-    <link rel="shortcut icon" href="images/short-icon.png" type="image/x-icon">
+    <title>CYTConnect</title>
+    <link rel="shortcut icon" href="images/LOGO.png" type="image/x-icon">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,7 +19,70 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Mirza:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagen en la parte izquierda</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        .imagen-izquierda {
+            position: absolute;
+            top: 80px; /* Separación de 80px desde la parte superior */
+            left: 0; /* Coloca la imagen en la esquina izquierda */
+        }
+    </style>
   </head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sección de Integrantes al Final</title>
+  <style>
+      body {
+          font-family: Arial, sans-serif;
+          margin: 0;
+          padding: 0;
+          background-color: #f4f4f4;
+      }
+      .contenido {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 100vh; /* Altura completa de la ventana */
+          text-align: center;
+          flex-direction: column;
+      }
+      .integrantes-container {
+          display: flex;
+          justify-content: space-around;
+          margin-top: 50px;
+          padding: 20px;
+      }
+      .integrante {
+          background-color: #ffffff;
+          border-radius: 10px;
+          width: 250px;
+          text-align: center;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+          padding: 20px;
+      }
+      .integrante img {
+          border-radius: 50%;
+          width: 150px;
+          height: 150px;
+          object-fit: cover;
+      }
+      .integrante h3 {
+          margin: 15px 0 5px;
+          font-size: 1.2em;
+          color: #333;
+      }
+      .integrante p {
+          color: #555;
+          font-size: 1em;
+          margin: 0;
+      }
+  </style>
   </body class="bg-body" data-bs-spy="scroll" data-bs-target="#navbar" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" tabindex="0">
     <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
       <symbol id="search" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
@@ -81,12 +144,13 @@
       <symbol xmlns="http://www.w3.org/2000/svg" id="youtube" viewBox="0 0 24 24">
         <path fill="currentColor" d="M12.244 4c.534.003 1.87.016 3.29.073l.504.022c1.429.067 2.857.183 3.566.38c.945.266 1.687 1.04 1.938 2.022c.4 1.56.45 4.602.456 5.339l.001.152v.174c-.007.737-.057 3.78-.457 5.339c-.254.985-.997 1.76-1.938 2.022c-.709.197-2.137.313-3.566.38l-.504.023c-1.42.056-2.756.07-3.29.072l-.235.001h-.255c-1.13-.007-5.856-.058-7.36-.476c-.944-.266-1.687-1.04-1.938-2.022c-.4-1.56-.45-4.602-.456-5.339v-.326c.006-.737.056-3.78.456-5.339c.254-.985.997-1.76 1.939-2.021c1.503-.419 6.23-.47 7.36-.476h.489ZM9.999 8.5v7l6-3.5l-6-3.5Z" />
       </symbol>
+      <img src="images/Bacilio logo.jpg" alt="Imagen" class="imagen-izquierda">
     </svg>
     <header id="header" class="site-header text-black">
       <nav id="header-nav" class="navbar navbar-expand-lg px-3 mb-3">
         <div class="container-fluid">
           <a class="navbar-brand" href="index.html">
-            NEUROSYS
+            CYTCONNECT
           </a>
           <button class="navbar-toggler d-flex d-lg-none order-3 p-2 border-0 shadow-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#bdNavbar" aria-controls="bdNavbar" aria-expanded="false" aria-label="Toggle navigation">
             <svg class="navbar-icon" width="50" height="50">
@@ -105,12 +169,18 @@
                 <li class="nav-item">
                   <a class="nav-link active p-0" href="#intro">Home</a>
                 </li>
+                <li class="nav-item">
+                  <a class="nav-link active p-0" href="#product-detail">Acerca de nosotros</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active p-0" href="#featured-products">Ubicación</a>
+                </li>
             </div>
           </div>
         </div>
       </nav>
     </header>
-    <section id="intro" style="background-image: url(images/banner-image1.jpg); background-repeat: no-repeat; background-position: center; width: 100%; height: 1021px;">
+    <section id="intro" style="background-image: url(images/BANNER.png); background-repeat: no-repeat; background-position: center; width: 100%; height: 1021px;">
       <div class="container-lg">
         <div class="row">
           <div class="col-lg-7 col-md-6">
@@ -126,7 +196,7 @@
         <div class="row justify-content-between">
           <div class="col-md-5">
             <div class="image-holder">
-              <img src="images/product-large-1.jpg" alt="product-large" class="img-fluid">
+              <img src="images/Imagen piola.png" alt="product-large" class="img-fluid">
             </div>
           </div>
           <div class="col-md-6">
@@ -150,116 +220,81 @@
       </div>
     </section>
     <section id="featured-products" class="bg-gray-1 py-lg-6">
-      <div class="container-lg">
-        <div class="display-header text-center">
-          <h2 class="display-2">Portafolio</h2>
-        </div>
-        <div class="product-content">
-          <div class="row">
-            <div class="col-lg-4 col-md-6 mb-5">
-              <div class="product-card">
-                <div class="image-holder position-relative">
-                  <a href="#">
-                    <img src="images/Avance1.jpg" alt="product-item" class="img-fluid">
-                  </a>
-                  <div class="cart-concern">
-                    <div class="cart-button position-absolute">
-                    </div>
-                  </div>
-                </div>
-                <div class="card-detail">
-                  <h3 class="card-title fs-3 mb-2 mt-2">
-                    <a href="single-product.html">Avance 1</a>
-                  </h3>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-4 col-md-6 mb-5">
-              <div class="product-card">
-                <div class="image-holder position-relative">
-                  <a href="#">
-                    <img src="images/Avance2.jpg" alt="product-item" class="img-fluid">
-                  </a>
-                  <div class="cart-concern">
-                    <div class="cart-button position-absolute">
-                    </div>
-                  </div>
-                </div>
-                <div class="card-detail">
-                  <h3 class="card-title fs-3 mb-2 mt-2">
-                    <a href="single-product.html">Avance 2</a>
-                  </h3>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-4 col-md-6 mb-5">
-              <div class="product-card">
-                <div class="image-holder position-relative">
-                  <a href="#">
-                    <img src="images/Avance3.jpg" alt="product-item" class="img-fluid">
-                  </a>
-                  <div class="cart-concern">
-                    <div class="cart-button position-absolute">
-                    </div>
-                  </div>
-                </div>
-                <div class="card-detail">
-                  <h3 class="card-title fs-3 mb-2 mt-2">
-                    <a href="single-product.html">Avance 3</a>
-                  </h3>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-4 col-md-6 mb-5">
-              <div class="product-card">
-                <div class="image-holder position-relative">
-                  <a href="#">
-                    <img src="images/Avance4.jpg" alt="product-item" class="img-fluid">
-                  </a>
-                  <div class="cart-concern">
-                    <div class="cart-button position-absolute">
-                    </div>
-                  </div>
-                </div>
-                <div class="card-detail">
-                  <h3 class="card-title fs-3 mb-2 mt-2">
-                    <a href="single-product.html">Avance 4</a>
-                  </h3>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-4 col-md-6 mb-5">
-              <div class="product-card">
-                <div class="image-holder position-relative">
-                  <a href="#">
-                    <img src="images/Avance5.jpg" alt="product-item" class="img-fluid">
-                  </a>
-                  <div class="cart-concern">
-                    <div class="cart-button position-absolute">
-                    </div>
-                  </div>
-                </div>
-                <div class="card-detail">
-                  <h3 class="card-title fs-3 mb-2 mt-2">
-                    <a href="single-product.html">Avance 5</a>
-                  </h3>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-4 col-md-6 mb-5">
-              <div class="product-card">
-                <div class="image-holder position-relative">
-                  <a href="#">
-                    <img src="images/Avance6" alt="product-item" class="img-fluid">
-                  </a>
-                  <div class="cart-concern">
-                    <div class="cart-button position-absolute">
-                    </div>
-                  </div>
-                </div>
-                <div class="card-detail">
-                  <h3 class="card-title fs-3 mb-2 mt-2">
-                    <a href="single-product.html">Avance 6</a>
+      <div style="width: 700px; height: 700px; display: flex; justify-content: center; align-items: center; border: 2px solid #333; background-color: #fff; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); margin: 0 auto;">
+        <a href="https://www.google.com/maps/place/I.E.+PNP+Bacilio+Ramirez+Pe%C3%B1a/@-5.188132,-80.6503363,19z/data=!3m1!4b1!4m6!3m5!1s0x904a1a92040a3ef3:0x741b77933917f80c!8m2!3d-5.1881333!4d-80.6496926!16s%2Fg%2F1tg2lqxh?entry=ttu&g_ep=EgoyMDI0MTExMy4xIKXMDSoASAFQAw%3D%3D" target="_blank" style="display: flex; justify-content: center; align-items: center; width: 100%; height: 100%;">
+        <img src="images/UBICACIÓN.jpg" alt="Imagen centrada" style="max-width: 100%; max-height: 100%;">
+      </div>
+    </section>    
+    
+<!-- Aquí va el contenido previo de la página centrado -->
+<div class="contenido">
+  <h1>¿Quienes somos?</h1>
+  <p class="subtitulo">En nuestra institución, los estudiantes de 5º año de secundaria han implementado un innovador programa de mentoría para apoyar a sus compañeros de 1º y 2º año utilizando un chatbot como herramienta principal. Este proyecto combina la tutoría tradicional con la tecnología para facilitar el aprendizaje y brindar soporte académico de manera accesible y eficiente. El chatbot, diseñado y configurado por los estudiantes mayores, es capaz de responder preguntas frecuentes sobre materias como matemáticas, ciencias y lenguaje. Además, proporciona recursos interactivos, ejercicios y guías prácticas que ayudan a reforzar conceptos clave. Los estudiantes más jóvenes pueden interactuar con el chatbot en cualquier momento, lo que reduce la necesidad de esperar por asistencia directa y fomenta la autonomía en su aprendizaje. Este enfoque no solo beneficia a los alumnos de 1º y 2º año, sino que también permite que los estudiantes de 5º desarrollen habilidades tecnológicas avanzadas, liderazgo y trabajo en equipo, demostrando el poder de la colaboración y la innovación educativa.</p>
+</div>
+
+<!-- Sección de Integrantes al final de la página -->
+<div class="integrantes-container">
+  <div class="integrante">
+    <img src="images/JHON VALLE.jpg" alt="Integrante 1">
+    <h3>
+      <a href="https://www.instagram.com/v.anthony_ps/" target="_blank">Jhon Valle</a>
+    </h3>
+    <p>Desarrollador.</p>
+    <div class="correo">
+      <p>Correo: <a href="mailto:vallemorejhonantony@gmail.com">vallemorejhon
+        antony@gmail.com</a></p>
+    </div>
+  </div>
+  
+  <div class="integrante">
+    <img src="images/MERVYN.jpg" alt="Integrante 2">
+    <h3>
+      <a href="https://www.instagram.com/mervyncortes/" target="_blank">Mervyn Cortes</a>
+    </h3>
+    <p>Líder e investigador.</p>
+    <div class="correo">
+      <p>Correo: <a href="mailto:cortesgarciamervynwatson@gmail.com">cortesgarciamervyn
+        watson@gmail.com</a></p>
+    </div>
+  </div>
+
+  <div class="integrante">
+    <img src="images/NATALIA MOGOLLON.jpg" alt="Integrante 3">
+    <h3>
+      <a href="https://www.instagram.com/nata_mogollon_/" target="_blank">Natalia Mogollon</a>
+    </h3>
+    <p>Diseñadora.</p>
+    <div class="correo">
+      <p>Correo: <a href="mailto:mogollonzambranonataliamariagr@gmail.com">mogollonzambranonatalia
+        mariagr@gmail.com</a></p>
+    </div>
+  </div>
+</div>
+</section> 
+<style>
+  .contenido {
+    text-align: center;
+  }
+
+  .contenido .subtitulo {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #555; /* Cambia este color si es necesario */
+  }
+
+  .integrante h3 a {
+    color: #000000; /* Color del enlace */
+    text-decoration: none; /* Quitar el subrayado */
+    transition: color 0.3s; /* Efecto suave al pasar el mouse */
+  }
+
+  .integrante h3 a:hover {
+    color: #000000; /* Cambia el color cuando el mouse pase sobre el enlace */
+  }
+</style>
+      </div>
+  </div>
+</div>  
                   </h3>
                 </div>
               </div>
@@ -268,21 +303,6 @@
         </div>
       </div>
     </section>
-    <div class="footer-bottom text-center bg-gray-1 py-5">
-      <p>© 2023 Reddy. Designed By <a href="https://templatesjungle.com/">TemplatesJungle</a>
-      </p>
-    </div>
-    <script src="js/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-    <script src="js/plugins.js"></script>
-    <script src="js/script.js"></script>
-    <script>
-      window.embeddedChatbotConfig = {
-      chatbotId: "c3IGPEIarqidMg6tQJfIl",
-      domain: "www.chatbase.co"
-      }
       </script>
       <script
       src="https://www.chatbase.co/embed.min.js"
